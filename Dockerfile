@@ -4,9 +4,9 @@ FROM --platform=amd64 ubuntu:18.04
 LABEL maintainer="Farshad Ghanei <fgh@iit.edu>"
 
 # prerequisites
-RUN apt-get update --fix-missing
-RUN apt-get update && apt-get install -y apt-utils
-RUN apt-get install -y gcc make build-essential libcunit1-dev libcunit1-doc libcunit1 wget python qemu xorg-dev libncurses5-dev gdb git
+RUN apt update --fix-missing
+RUN apt update --fix-missing && apt install -y apt-utils --fix-missing
+RUN apt install --fix-missing -y gcc vim wget curl make build-essential libcunit1-dev libcunit1-doc libcunit1 wget python qemu xorg-dev libncurses5-dev gdb git
 
 
 ###############################################
